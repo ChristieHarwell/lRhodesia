@@ -1,0 +1,37 @@
+/* color palette url https://www.palettable.io/000000-E0DFDD-FFFFFF-FBFBF8-EFEFEF */
+
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+  --offWhite: #FBFBF8;
+  --darkGrey: #8E8E8E;
+  --grey: #E0DFDD;
+  --lightGrey: #EFEFEF;
+  --red: #C11111;
+  --blue: #0813AA;
+}
+
+body {
+  font-family: 'Lato', sans-serif !important;
+  background: var(--white) !important;
+  color: var(--black) !important;
+}
+
+.text-title {
+  font-family: 'Roboto', sans-serif !important;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;  
+}
+
+.text-light {
+  color: var(--darkGrey);
+}
+
+.text-red {
+  color: var(--red);
+}
+
+.text-blue {
+  color: var(--blue);
+}
+
