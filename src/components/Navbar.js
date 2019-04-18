@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
-import logo from '../images/logo.svg';
+// import {Link} from 'react-router-dom';
+import logo from '../logo.svg';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import { NavDropdown } from 'react-bootstrap';
+import styled from 'styled-components';
+// import { buttonContainer } from './Button';
 
-
-
-class Navigation extends Component {
+export default class NavBar extends Component {
   render() {
     return (
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="light" expand="lg" className="the-nav">
         <Navbar.Brand href="#home">
           <img src={logo} className="App-logo" alt="logo" />
       </Navbar.Brand>
@@ -37,11 +37,11 @@ class Navigation extends Component {
               <NavDropdown.Item href="#action/3.2">Wish List</NavDropdown.Item>
             </NavDropdown>   
 
-            <Nav.Item>
-              <Button variant="light" href="#">
+            <buttonContainer>
+              <Button variant="light" href="#" alt="cart button">
                 <i class="fas fa-shopping-bag fa-lg"></i>
               </Button>
-            </Nav.Item>                  
+            </buttonContainer>              
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -49,5 +49,12 @@ class Navigation extends Component {
   }
 }
 
-export default Navigation;
-
+const NavWrapper = styled.nav`
+  background: var(--lightGrey);
+  .nav-link{
+    color: var(--red)!important;
+  }
+  .the-nav{
+    text-transform: capitalize;
+  }
+`;
