@@ -12,14 +12,14 @@ export default class NavBar extends Component {
   render() {
     return (
       <Navbar bg="light" expand="lg" className="the-nav">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img src={logo} className="App-logo" alt="logo" />
       </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
 
-            <Nav.Link href="#home">Products</Nav.Link>
+            <Nav.Link href="/ProductList">Products</Nav.Link>
             <NavDropdown title="Notes" variant="light" id="basic-nav-dropdown">
               <NavDropdown.Item href="https://en.wikipedia.org/wiki/Sandalwood" target="blank">Sandalwood</NavDropdown.Item>
               <NavDropdown.Item href="https://en.wikipedia.org/wiki/Vanilla" target="blank">Vanilla</NavDropdown.Item>
