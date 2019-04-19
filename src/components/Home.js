@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Title from './Title';
+import MainTitle from './Title';
 import BackgroundVideo from './BackgroundVideo';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
@@ -14,7 +14,7 @@ export default class Home extends Component {
       <React.Fragment>
         <Jumbotron>
           <Button variant="light col-12 mx-auto my-2 text-center text-title" href="/ProductList">
-            <Title title="LRhodesia" />
+            <MainTitle title="LRhodesia" />
             <BackgroundVideo className="video-container align-self-center mb-0 mx-auto" title="LRhodesia" />                
           </Button>
           
