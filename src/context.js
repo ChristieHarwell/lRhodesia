@@ -23,12 +23,12 @@ class ProductProvider extends Component {
             return {products: tempProducts};
         });
     }
-    handleDetail = () =>{
+    handleDetail = () => {
         console.log('hello from detail');
     };
 
-    addToCart = () =>{
-        console.log('hello from add to cart');
+    addToCart = (id) => {
+        console.log(`hello from add to cart.id is ${id}`);
     };
   
 // TESTER METHOD: un-comment the FOLLOWING tester code to verify functionality in the console.
