@@ -42,7 +42,7 @@ body {
 
 .text-blue {
   color: var(--blue);
-  z-index: 100 !important;
+  /* z-index: 100 !important; */
 }
 
 .the-nav {

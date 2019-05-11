@@ -70,7 +70,7 @@ Product.propTypes = {
   }).isRequired
 };
 
-const ProductWrapper = styled.div`
+const ProductWrapper = styled.div `
   .card {
     border-color: transparent;
     transition: all 1s linear;
@@ -96,7 +96,7 @@ const ProductWrapper = styled.div`
   .card-img-top {
     transition: all 1s linear;
   }
-  .img-container: hover .card-img-top {
+  .img-container: hover  .card-img-top {
     transform: scale(1.2);
   }
   .cart-btn {
