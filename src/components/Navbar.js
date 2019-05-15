@@ -38,7 +38,7 @@ export default class NavBar extends Component {
             </NavDropdown>   
 
             <buttonContainer>
-              <Button variant="light" href="#" alt="cart button">
+              <Button variant="light" href="/Cart" alt="cart button">
                 <i class="fas fa-shopping-bag fa-lg"></i>
               </Button>
             </buttonContainer>              
